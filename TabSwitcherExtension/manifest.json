@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Tab Switcher",
+  "description": "Automatically switches tabs at a set interval. Includes options for auto-refresh, auto-scrolling, and pausing on activity.",
+  "version": "1.2.2",
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "idle",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_scroll.js"]
+    }
+  ]
+}
