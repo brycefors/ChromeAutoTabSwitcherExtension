@@ -146,6 +146,40 @@
             text-align: center;
             font-style: italic;
         }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #202124;
+                color: #e8eaed;
+            }
+            h2, legend {
+                color: #e8eaed;
+            }
+            label, .global-note {
+                color: #9aa0a6;
+            }
+            input[type="number"], select {
+                background-color: #292a2d;
+                color: #e8eaed;
+                border: 1px solid #5f6368;
+            }
+            fieldset, .header-container {
+                border-color: #5f6368;
+            }
+            #saveAll {
+                background-color: #292a2d;
+                color: #e8eaed;
+                border: 1px solid #5f6368;
+            }
+            #saveAll:hover {
+                background-color: #3c4043;
+            }
+            #toggleBadge {
+                color: #8ab4f8;
+            }
+            #toggleBadge:hover {
+                color: #aecbfa;
+            }
+        }
     </style>
 </head>
 <body>
